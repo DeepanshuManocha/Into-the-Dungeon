@@ -1,0 +1,11 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class rotate : MonoBehaviour
+{   public float Rotate;
+    void Update()
+    {
+        transform.Rotate(new Vector3(0,0,Rotate*Time.deltaTime));
+    }
+}
